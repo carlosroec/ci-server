@@ -1,0 +1,32 @@
+{
+    "name": "ci-server",
+    "version": "1.0.0",
+    "description": "Integración continua con Node.js + Docker",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/carlosroec/ci-server.git"
+    },
+    "keywords": [
+        "Node.js",
+        "CI",
+        "Docker"
+    ],
+    "author": "carlosro_ec",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/carlosroec/ci-server/issues"
+    },
+    "homepage": "https://github.com/carlosroec/ci-server#readme",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "github-webhook-handler": "^1.0.0",
+        "node-docker-api": "^1.1.22",
+        "tar-fs": "^2.1.0"
+    }
+}
