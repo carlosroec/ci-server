@@ -1,5 +1,5 @@
 const GithubWebHook = require('express-github-webhook');
-const webhookHandler = GithubWebHook({ path: '/api/webhook', secret: 'secret-text' });
+const webhookHandler = GithubWebHook({ path: '/api/webhook', secret: 'jdhhhf465hsdjh' });
 
 webhookHandler.on('*', function (event, repo, data) {
     console.log(event);
