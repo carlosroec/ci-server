@@ -8,7 +8,7 @@ const promisifyStream = stream => new Promise((resolve, reject) => {
     stream.on('error', reject)
 });
 
-webhookHandler.on('*', async (event, repo, data) => {
+webhookHandler.on('push', async (event, repo, data) => {
     const docker = new Docker({ socketPath: '/var/run/docker.sock' });
     
     // construimos el container en base a la imagen indicada

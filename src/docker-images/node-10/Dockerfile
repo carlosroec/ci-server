@@ -11,4 +11,4 @@ WORKDIR /usr/src/app/$REPO_NAME
 
 RUN npm install
 
-CMD ["npm", "run", "test"]
+CMD git pull && npm run test
